@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning JavaScript</title>
+    <link rel="stylesheet" href="form.css.css" />
+  </head>
+  <body>
+    <h1>Filter Question Form</h1>
+    <div class="main">
+      <form>
+        <label for="name">Name</label>
+        <br />
+        <input
+          type="text"
+          name="text"
+          id="name"
+          placeholder="Enter your Name"
+        />
+
+        <br /><br />
+
+        <label for="email">Email</label>
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your Email"
+        />
+
+        <br /><br />
+        <label for="class">Class</label>
+        <br />
+        <select onchange="filter()" id="class">
+          <option>Select a Class</option>
+          <option>VI</option>
+          <option>VII</option>
+          <option>VIII</option>
+          <option>IX</option>
+          <option>X</option>
+          <option>XI</option>
+          <option>XII</option>
+        </select>
+        <br /><br />
+        <label for="section">Section</label>
+        <br />
+        <select disabled id="section">
+          <option>Select a Section</option>
+        </select>
+        <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="form.js.js"></script>
+  </body>
+</html>
